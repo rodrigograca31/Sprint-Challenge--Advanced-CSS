@@ -1,1 +1,45 @@
 // Mixins Here
+
+.displayFlex(@wrap: nowrap) {
+    display: flex;
+    flex-wrap: @wrap;
+}
+
+.padding(@topBottom: 0, @leftRight: 0) {
+    padding: @topBottom @leftRight;
+}
+
+.btnStyles(@bgColor: @btn-bg-color, @textColor: white, @borderRadius: 0, @fontSize: 2rem) {
+    background: @btn-bg-color;
+    color: @textColor;
+    display: inline-block;
+    border-radius: @borderRadius;
+    font-size: @fontSize;
+    font-weight: bold;
+
+    &:hover {
+        background: @textColor;
+        color: @btn-bg-color;
+    }
+}
+
+
+.imgAnimated(@duration: 2s) {
+    &:hover {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: @duration;
+        animation-name: zoom;
+        animation-duration: @duration;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
