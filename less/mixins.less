@@ -1,1 +1,24 @@
 // Mixins Here
+
+.displayFlex(@wrap: nowrap) {
+    display: flex;
+    flex-wrap: @wrap;
+}
+
+.padding(@topBottom: 0, @leftRight: 0) {
+    padding: @topBottom @leftRight;
+}
+
+.btnStyles(@bgColor: @btn-bg-color, @textColor: white, @borderRadius: 0, @fontSize: 2rem) {
+    background: @btn-bg-color;
+    color: @textColor;
+    display: inline-block;
+    border-radius: @borderRadius;
+    font-size: @fontSize;
+    font-weight: bold;
+
+    &:hover {
+        background: @textColor;
+        color: @btn-bg-color;
+    }
+}

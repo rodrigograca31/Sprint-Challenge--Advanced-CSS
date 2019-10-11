@@ -6,12 +6,11 @@
     h1 {
         font-size: 4rem;
         text-align: center;
-        padding: 15px;
+        .padding(15px, 15px);
     }
 
     nav {
-        display: flex;
-        flex-wrap: wrap;
+        .displayFlex(wrap);
         justify-content: center;
 
         a {
@@ -25,5 +24,6 @@
     }
 
     background: @nav-bg;
-    border-bottom: 2px solid @nav-border;
+    border-bottom: 4px solid @nav-border;
+    color: @header-font-color;
 }
