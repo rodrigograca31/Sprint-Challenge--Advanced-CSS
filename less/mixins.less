@@ -22,3 +22,24 @@
         color: @btn-bg-color;
     }
 }
+
+
+.imgAnimated(@duration: 2s) {
+    &:hover {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: @duration;
+        animation-name: zoom;
+        animation-duration: @duration;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}

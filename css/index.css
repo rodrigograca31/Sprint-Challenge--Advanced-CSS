@@ -1,3 +1,11 @@
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -327,4 +335,11 @@ footer {
     margin-right: 10px;
     width: auto;
   }
+}
+img:hover {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 1s;
+  animation-name: zoom;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
