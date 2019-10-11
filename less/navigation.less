@@ -1,1 +1,29 @@
 // Navigation code here
+
+.nav {
+    max-width: 1000px;
+
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 1.6rem;
+            padding: 0 16px;
+        }
+
+        padding-bottom: 10px;
+    }
+
+    background: @nav-bg;
+    border-bottom: 2px solid @nav-border;
+}
