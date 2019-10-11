@@ -317,6 +317,35 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .newsletter {
+  margin: 50px 0;
+}
+.home .newsletter input,
+.home .newsletter textarea,
+.home .newsletter select {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid black;
+  font-size: 2rem;
+}
+.home .newsletter input[type="reset"],
+.home .newsletter textarea[type="reset"],
+.home .newsletter select[type="reset"],
+.home .newsletter input[type="submit"],
+.home .newsletter textarea[type="submit"],
+.home .newsletter select[type="submit"] {
+  width: 150px;
+  margin-right: 20px;
+}
+.home .newsletter label {
+  font-size: 2rem;
+  margin: 10px 0;
+  display: block;
+}
+.home .newsletter textarea {
+  height: 100px;
+  margin-bottom: 20px;
+}
 .video {
   width: 100%;
   height: 0;
