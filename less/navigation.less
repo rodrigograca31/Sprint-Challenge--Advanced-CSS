@@ -23,7 +23,14 @@
         padding-bottom: 10px;
     }
 
-    background: @nav-bg;
+    background: fade(@nav-bg, 80%);
     border-bottom: 4px solid @nav-border;
     color: @header-font-color;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
 }
